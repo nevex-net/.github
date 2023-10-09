@@ -1,7 +1,8 @@
 name: 🤖 Auto sync labels
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
       - .github/labels.yml
   schedule:
@@ -12,13 +13,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.0
-      - uses: micnncim/action-label-syncer@v1.3.0
+      - uses: actions/checkout@v4
+      - uses: micnncim/action-label-syncer@v1
         with:
           manifest: .github/labels.yml
-          token: ${{ secrets.GITHUB_TOKEN }}
-          prune: false
+          token: ${{ secrets.NEVEX_NET_BOT_TOKEN }}
           repository: |
             nevex-net/.github
             nevex-net/site
             nevex-net/backend
+            nevex-net/nevex.net
