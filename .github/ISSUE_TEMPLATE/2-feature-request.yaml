@@ -1,0 +1,16 @@
+name: "🚀 - Feature Request"
+title: "🚀 - "
+description: Suggest a feature
+labels: []
+type: Feature
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: |
+        Proposed solution.
+        Alternatives considered.
+    validations:
+      required: true

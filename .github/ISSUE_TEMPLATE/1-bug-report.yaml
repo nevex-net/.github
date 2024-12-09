@@ -1,0 +1,43 @@
+name: "🐞 - Bug Report"
+title: "🐞 - "
+description: Report a bug
+labels: []
+type: Bug
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: |
+        Add any other context about the problem here, such as screenshots or videos.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser Used
+      description: Select the browser where the bug was observed.
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: false
+
+  - type: dropdown
+    id: operating-systems
+    attributes:
+      label: OS Used
+      description: Select the OS where the bug was observed.
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - iOS
+        - Android
+    validations:
+      required: false
