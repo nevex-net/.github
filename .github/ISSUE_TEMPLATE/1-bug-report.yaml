@@ -2,7 +2,6 @@ name: "🐞 - Bug Report"
 title: "🐞 - "
 description: Report a bug
 labels: []
-type: Bug
 
 body:
   - type: textarea
@@ -13,7 +12,6 @@ body:
         Add any other context about the problem here, such as screenshots or videos.
     validations:
       required: true
-
   - type: dropdown
     id: browser
     attributes:
@@ -27,7 +25,6 @@ body:
         - Other
     validations:
       required: false
-
   - type: dropdown
     id: operating-systems
     attributes:
