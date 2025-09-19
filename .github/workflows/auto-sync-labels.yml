@@ -21,6 +21,6 @@ jobs:
           repository: |
             nevex-net/.github
             nevex-net/nevex.net
-            nevex-net/site
+            nevex-net/app
             nevex-net/backend
             nevex-net/nevex.net
