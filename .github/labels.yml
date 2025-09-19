@@ -10,3 +10,6 @@
 - name: ready to merge
   description: ready
   color: 0E8A16
+- name: review
+  description: review
+  color: 5319E7
